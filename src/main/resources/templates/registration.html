@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Welcome</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; background:#f4f6f8; color:#333; }
+    .container { max-width: 600px; margin: 32px auto; background: #ffffff; padding: 24px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .header { text-align:center; margin-bottom: 16px; }
+    .logo { font-weight:700; color:#274e13; font-size:20px; }
+    .content { font-size:15px; line-height:1.6; }
+    .btn { display:inline-block; padding: 10px 16px; background:#2f7ae5; color:#fff; border-radius:6px; text-decoration:none; }
+    .small { font-size:13px; color:#666; margin-top:18px; }
+    .footer { font-size:12px; color:#999; text-align:center; margin-top:18px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">Your App Team</div>
+    </div>
+
+    <div class="content">
+      <p>Hello {{name}},</p>
+
+      <p>Welcome and thank you for creating an account with us. We're excited to have you on board.</p>
+
+      <p>Username: <strong>{{username}}</strong></p>
+
+      <p>
+        <a class="btn" href="{{loginUrl}}">Go to application</a>
+      </p>
+
+      <p class="small">If you didn't create this account, please ignore this email or contact support.</p>
+
+      <p>Best regards,<br/>The Your App Team</p>
+    </div>
+
+    <div class="footer">
+      &copy; <!--year--> Your Company. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
